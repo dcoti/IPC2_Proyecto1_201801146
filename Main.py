@@ -13,7 +13,7 @@ def menu():
     print("1. Cargar archivos")
     print("2. Procesar Archivo")
     print("3. Escribir archivo salida")
-    print("4. Mostrar datos del estudiante")
+    print("4. Mostrar datos del estudiante")#
     print("5. Generar gráfica")
     print("6. Salir")
     opcion=input("Eliga su opcion: ")
