@@ -11,4 +11,4 @@ class nodoDatos:
         self.columnas=columnas
         self.next=None
         binario=convertir(self.nombre)
-        #print(self.nombre)
+        print(self.nombre)
