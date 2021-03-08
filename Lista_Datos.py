@@ -25,6 +25,29 @@ class Lista_datos:
                 return nuevo.nombre
             nuevo=nuevo.next
 
+    def Buscar_binario(self, x, y):
+        nuevo = self.cabeza
+        while nuevo != None:
+            if (int(nuevo.filas) == x) & (int(nuevo.columnas) == y):
+                return nuevo.binario
+            nuevo = nuevo.next
+
+    def Eliminar_dato(self,i):
+        anterior=None
+        if self.cabeza!=None:
+            while self.cabeza!=None:
+                if self.cabeza.filas!=i:
+                    anterior=self.cabeza
+                    self.cabeza=self.cabeza.next
+                if self.cabeza==None:
+                    print("Valor no encontrado")
+                else:
+                    if anterior==None:
+                        self.cabeza=self.cabeza.next
+                    else:
+                        anterior.next=self.cabeza.next
+
+
 
 
 

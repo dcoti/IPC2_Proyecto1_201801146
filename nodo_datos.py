@@ -1,3 +1,4 @@
+#Matriz binaria
 def convertir(nombre):
     if int(nombre)==0:
         return 0
@@ -10,5 +11,5 @@ class nodoDatos:
         self.filas=filas
         self.columnas=columnas
         self.next=None
-        binario=convertir(self.nombre)
-        print(self.nombre)
+        self.binario=convertir(self.nombre)
+        #print(self.nombre)
