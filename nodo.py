@@ -9,5 +9,6 @@ class nodoMatrix:
         self.rama = rama
         self.next=None
         #print(self.nombre)
-        for a in rama:
-            self.lista.Agregar_datos(a.text,a.get("x"),a.get("y"))
+        if rama!=0:
+            for a in rama:
+                self.lista.Agregar_datos(a.text,a.get("x"),a.get("y"))
